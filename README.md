@@ -3,6 +3,8 @@ Bing News Data Analytics- End-to-End Azure Data Engineering Project using Micros
 
 A revolutionizing cutting-edge all-in-one data Engineering and Data science platform, from ingestion to reporting, leveraging incredible machine learning and deep learning capabilities and seamlessly integrating Copilot for Power BI, this is Microsoft Fabric, Built for the Era of AI!
 
+<img src="https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/blob/main/MSFabric_Screenshot-2048x1091%20(1).jpg" align="center"/> 
+
 Our journey in this quick tutorial will look like the following agenda:
 🚀 Setting up the environment, creating essential resources, and configuring the groundwork for a seamless workflow.
 
