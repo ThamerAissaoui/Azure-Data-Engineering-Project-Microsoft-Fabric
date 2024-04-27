@@ -40,7 +40,58 @@ The destination of this pipeline ingestion job should be saved to our Lakehouse 
 
 ## Data Transformation (Incremental Load)
 
+We have used Synapse Data Engineering to create the notebooks and define the Spark jobs.
+
+We have 2 types of Incremental load:
+
+### Type 1:
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/ae7fcfef-e034-450a-952e-9a34b688d45d)
+
+### Type 2:
+
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/aa219ecb-88dc-4c8f-9a85-04cf6efc3692)
+
+We will be considering Type 1 for our project, we will be overwriting any existing data and we won't keep any history.
+
 The Jupyter Notebook Python code is located here: [Data Transformation (Incremental Load)](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/blob/main/Process_bing_news.ipynb)
+
+
+## Sentiment Analysis (Incremental Load)
+
+We have used Synapse Data Engineering to create the notebooks and define the Spark jobs.
+
+We have considered A pre-trained Machine learning model from Synapse ML to analyze the sentiment of the news: Positive, Neutral, or Negative based on the description, then we saved the output to 
+
+The Jupyter Notebook Python code is located here: [Sentiment Analysis (Incremental Load)](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/blob/main/news-sentiment-analysis.ipynb)
+
+## Data Reporting using Power BI
+
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/c295132a-01a2-4bf5-8c93-d70e39b826e1)
+
+## Building Pipelines and E2E testing
+Now it is time to create a complete E2E pipeline that will be triggered automatically every day at 6 AM
+
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/b233601c-1e4b-4ee9-85ff-61f49a27b45b)
+
+
+## Setting up alerts (Data Activator)
+
+Data activator coming new feature: monitoring and alerting tool where it monitors the data continuously and if it finds some anomalies or outliers in the data it will trigger an alert for us to take some actions immediately
+
+Create a new reflex component:
+
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/d2b18371-a87a-4267-8c55-84c0e2e19b8f)
+
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/37eed0ed-5303-4e26-a22f-463d07a82bed)
+
+You can then define any Trigger condition you judge relevant to your use case:
+
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/95708da8-c37a-47c9-9729-a02e60bfc163)
+Notification received:
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/449ef043-9bf8-46d2-a399-ebbd0935386a)
+
+
+
 
 
      
