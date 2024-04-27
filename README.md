@@ -40,7 +40,8 @@ The destination of this pipeline ingestion job should be saved to our Lakehouse 
 
 ## Data Transformation (Incremental Load)
 
-The Jupyter Notebook Python code is located here: https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/blob/main/Process_bing_news.ipynb
+The Jupyter Notebook Python code is located here: [Data Transformation (Incremental Load)](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/blob/main/Process_bing_news.ipynb)
+
 
      
 
