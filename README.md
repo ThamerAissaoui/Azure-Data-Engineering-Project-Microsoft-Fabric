@@ -23,3 +23,26 @@ To use Fabric, we have to activate it within the Power BI workspace:
 
 ![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/ebade1bf-e9c5-43db-80a6-f8e445fda981)
 
+We have to set up a Lakehouse to use as a Data Lake similar to Azure Data Lake Gen2:
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/562532ba-41fd-4fc6-8bf5-1f73568e3a6b)
+
+
+## Data Ingestion
+
+First, create an ingestion pipeline using the Data factory:
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/bb3e8d96-efcb-47d3-a57d-3b51cdb8c605)
+
+Copy the latest news from Bing API using a parametrized search query :
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/71faf85a-b7d8-4172-98c1-81cca8d871b3)
+
+The destination of this pipeline ingestion job should be saved to our Lakehouse in JSON format:
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/1aaf9254-ce1c-40e2-8fd9-83d57ef1e40e)
+
+## Data Transformation (Incremental Load)
+
+The Jupyter Notebook Python code is located here: https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/blob/main/Process_bing_news.ipynb
+
+     
+
+
+
