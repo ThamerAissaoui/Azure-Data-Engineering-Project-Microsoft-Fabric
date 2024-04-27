@@ -6,12 +6,20 @@ A revolutionizing cutting-edge all-in-one data Engineering and Data science plat
 <img src="https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/blob/main/WORKFLOW.gif" align="center"/> 
 
 Our journey in this quick tutorial will look like the following agenda:
-- 🚀 Setting up the environment, creating essential resources, and configuring the groundwork for a seamless workflow.
 
-- 🔄 Witness the art of Data Ingestion using Data Factory, ensuring a steady stream of information into our system. 🛠️ Explore the depths of Data Transformation with Synapse Data Engineering, mastering incremental loading techniques for optimized data processing pipelines.
+In the initial phase, we will leverage Data Factory to establish a connection with the Bing API and extract the most recent news data, storing it in the lake database in JSON format. 
+Subsequently, utilizing the Synapse data engineering tool, we will process the raw JSON file, converting it into a refined Delta table. 
 
-- 📊 Dive into the realm of Synapse Data Science, where sentiment analysis becomes a reality through text analytics machine learning models. Learn the significance of incremental loading in populating data into the lake database.
+Following this, employing the Synapse data science tool, we will employ a text analysis machine learning model to predict the sentiment of the acquired news data and incorporate the results into the Lake database. 
 
-- 📈 Visualize your insights like never before with Data Reporting using Power BI. Build robust pipelines in Data Factory for seamless orchestration, and set up proactive alerts using Data Activator for enhanced reliability.
+Next, utilizing Power BI, we will construct a new dashboard incorporating the latest data. 
 
+Finally, utilizing the Data Activator tool, we will configure alerts within Power BI visuals to disseminate notifications via Microsoft Teams or email channels.
+
+## Environment Setup
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/15b966bc-dd1b-4a2c-9cae-336590cc60b5)
+
+To use Fabric, we have to activate it within the Power BI workspace:
+
+![image](https://github.com/ThamerAissaoui/Azure-Data-Engineering-Project-Microsoft-Fabric/assets/36975418/ebade1bf-e9c5-43db-80a6-f8e445fda981)
 
